@@ -43,7 +43,7 @@ function makePromise(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				num = num + 10
-				displayOutput.textContent = "Result: "+ num;
+				displayOutput.textContent = "Final Result: "+ num;
 				resolve(num)
 			},1000)
 		})
