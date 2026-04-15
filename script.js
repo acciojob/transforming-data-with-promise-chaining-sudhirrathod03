@@ -11,7 +11,7 @@ function makePromise(){
 	value.then((num)=>{
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
-				displayOutput.textContent = num;
+				displayOutput.textContent = "Result: "+ num;
 				resolve(num)
 			},2000)
 		})
@@ -19,7 +19,7 @@ function makePromise(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				num = num * 2
-				displayOutput.textContent = num;
+				displayOutput.textContent = "Result: "+ num;
 				resolve(num)
 			},1000)
 		})
@@ -27,7 +27,7 @@ function makePromise(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				num = num-3
-				displayOutput.textContent = num;
+				displayOutput.textContent = "Result: "+ num;
 				resolve(num)
 			},1000)
 		})
@@ -35,7 +35,7 @@ function makePromise(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				num = num / 2
-				displayOutput.textContent = num;
+				displayOutput.textContent = "Result: "+ num;
 				resolve(num)
 			},1000)
 		})
@@ -43,7 +43,7 @@ function makePromise(){
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
 				num = num + 10
-				displayOutput.textContent = num;
+				displayOutput.textContent = "Result: "+ num;
 				resolve(num)
 			},1000)
 		})
